@@ -1,6 +1,6 @@
 {
   "name": "react-native-text-link",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Simple module for React Native Apps to allow easy links inside your text, without any positioning issues. This solves the cases when a TouchableOpacity/Pressable has a different positioning than regular text.",
   "repository": "https://github.com/RamProg/react-native-text-link",
   "author": "RamProg",
