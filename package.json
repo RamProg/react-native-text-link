@@ -6,7 +6,15 @@
   "author": "RamProg",
   "license": "MIT",
   "private": false,
-  "keywords": ["react", "native", "text", "link", "format", "position", "fix"],
+  "keywords": [
+    "react",
+    "native",
+    "text",
+    "link",
+    "format",
+    "position",
+    "fix"
+  ],
   "scripts": {
     "lint": "yarn prettier --write . && tslint --fix -p ./tsconfig.json",
     "build": "tsc --project ./tsconfig.json",
