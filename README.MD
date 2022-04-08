@@ -1,8 +1,8 @@
 # TextLink
 
-When you need to insert a link inside a text in React Native, you might notice that the links have a different positioning, they are usually around 5 pixels under the line. This happens because the link is actually inside a View (wrapped in a Pressable/TouchableOpacity), so the positioning of the elements is different between a text and a View.
+When you need to insert a link inside a text in React Native, you might notice that the links have a different positioning, they are usually around 5 pixels under the line. This happens because the link is actually inside a View (wrapped in a Pressable/TouchableOpacity), so the positioning of the elements is different between a Text and a View.
 
-This package aims to easily solve this while still looking clean.
+This package aims to easily solve this while still looking clean. Using this package you will be able to provide a different Style while the link is being pressed.
 
 # Usage
 
