@@ -13,14 +13,15 @@ Then import:
 
     import  TextLink  from  'react-native-text-link';
 Then use:
-```
-<TextLink links={[{
-	text: 'Terms & Conditions',
-	onPress: () =>  console.log('link to terms'),
+```js
+<TextLink links={[
+	{
+		text: 'Terms & Conditions',
+		onPress: () =>  console.log('link to terms'),
 	},
 	{
-	text: 'Privacy Policy',
-	onPress: () =>  console.log('link to privacy'),
+		text: 'Privacy Policy',
+		onPress: () =>  console.log('link to privacy'),
 	},
 ]}>
 Please read our Terms & Conditions and our Privacy Policy.

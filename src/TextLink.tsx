@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleProp, StyleSheet, TextStyle } from 'react-native';
+import { StyleProp, StyleSheet, TextProps, TextStyle } from 'react-native';
 import ParsedText, { ParseShape } from 'react-native-parsed-text';
 
 type LinkType = {
@@ -7,11 +7,9 @@ type LinkType = {
   onPress: () => void;
 };
 
-type TextLinkPropsType = {
+type TextLinkPropsType = TextProps & {
   links: LinkType[];
-
   children: string;
-
   textStyle?: StyleProp<TextStyle>;
   textLinkStyle?: StyleProp<TextStyle>;
   pressingLinkStyle?: StyleProp<TextStyle>;
@@ -23,6 +21,7 @@ const TextLink = ({
   textStyle = style.defaultTextStyle,
   textLinkStyle = style.defaultLinkTextStyle,
   pressingLinkStyle = style.defaultPressingLinkStyle,
+  ...props
 }: TextLinkPropsType) => {
   const [isPressing, setIsPressing] = useState<LinkType>();
 
@@ -40,7 +39,11 @@ const TextLink = ({
   });
 
   return (
-    <ParsedText parse={parseOptions} style={textStyle}>
+    <ParsedText
+      parse={parseOptions}
+      style={textStyle}
+      {...props}
+    >
       {children}
     </ParsedText>
   );
